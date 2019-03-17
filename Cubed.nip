@@ -1,0 +1,32 @@
+//##########CUBE SOCKETED##########
+[Name] == GreatHauberk && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 1000 && [Sockets] == 4						//Fortitude, Stone
+[Name] == Boneweave && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 1000 && [Sockets] == 4							//Fortitude, Stone
+[Name] == ArchonPlate && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 1000 && [Sockets] == 4						//Fortitude, Stone
+[Name] == KrakenShell && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 1000 && [Sockets] == 4						//Fortitude, Stone
+[Name] == HellforgePlate && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 1000 && [Sockets] == 4					//Fortitude, Stone
+[Name] == SacredArmor && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 100 && ([Sockets] == 2 || [Sockets] == 4)	//Prudence, Fortitude, Stone
+[Name] == Monarch && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 300 && ([Sockets] == 3 || [Sockets] == 4)		//Dream, Sanctuary, Spirit, Phoenix
+
+//##########UPPED ITEMS##########
+//[Name] == Sallet && [Quality] == Unique																				//Ethereal TARNHELM Upped
+//[Name] == HydraSkull && [Quality] == Unique 																			//Ethereal TARNHELM 2X Upped
+//[Name] == SharkskinGloves && [Quality] == Unique 														//BLOODFIST Upped
+[Name] == VampireboneGloves && [Quality] == Unique 											//BLOODFIST 2X Upped
+//[Name] == BattleGauntlets && [Quality] == Unique																	//MAGEFIST Upped
+[Name] == CrusaderGauntlets && [Quality] == Unique 														//MAGEFIST 2X Upped
+//[Name] == DemonhideBoots && [Quality] == Unique 															//HOTSPUR Upped
+[Name] == WyrmhideBoots && [Quality] == Unique 																//HOTSPUR 2X Upped
+[Name] == WyrmhideBoots && [Quality] == Unique 																		//INFERNOSTRIDE Upped
+[Name] == ScarabshellBoots && [Quality] == Unique 												//WATERWALK Upped
+[Name] == MyrmidonGreaves && [Quality] == Unique 																//GORE RIDER Upped
+[Name] == Wyrmhide && [Quality] == Unique	//SKIN OF THE VIPERMAGI Upped
+[Name] == Boneweave && [Quality] == Unique 																		//Ethereal SHAFTSTOP Upped
+[Name] == Diadem && [Quality] == Unique 																				//KIRA'S GUARDIAN Upped
+[Name] == GhostSpear && [Quality] == Unique																						//Ethereal HONE SUNDAN Upped
+[Name] == Stalagmite && [Quality] == Unique 																											//RIBCRACKER Upped
+[Name] == PolishedWand && [Quality] == Unique 																												//Ethereal SUICIDE BRANCH Upped
+[Name] == MatriarchalJavelin && [Quality] == Unique 															//Ethereal TITAN'S REVENGE Upped
+//[Name] == GuardianCrown && [Quality] == Unique 																				//ARREAT'S FACE Upped
+[Name] == BloodlordSkull && [Quality] == Unique 																//HOMUNCULUS Upped
+[Name] == ZakarumShield && [Quality] == Unique 																	//HERALD OF ZAKARUM Upped
+[Name] == ZakarumShield && [Quality] == Unique 																		//Ethreal HERALD OF ZAKARUM Upped
