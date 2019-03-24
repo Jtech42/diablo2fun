@@ -100,13 +100,13 @@
 //[Name] == JaggedStar && [Quality] == set // Aldur's Rhythm
 
 // # Bul Kathos' Children #
-//[Name] == ColossusBlade && [Quality] == set // Bul-Kathos' Sacred Charge
-//[Name] == MythicalSword && [Quality] == set // Bul-Kathos' Tribal Guardian
+[Name] == ColossusBlade && [Quality] == set // Bul-Kathos' Sacred Charge
+[Name] == MythicalSword && [Quality] == set // Bul-Kathos' Tribal Guardian
 
 // # Cow King's Leathers #
-//[Name] == WarHat && [Quality] == set // Cow King's Horns
-//[Name] == StuddedLeather && [Quality] == set // Cow King's Hide
-//[Name] == HeavyBoots && [Quality] == set # [Dexterity] == 20 && [ItemMagicBonus] == 25 // Cow King's Hooves
+[Name] == WarHat && [Quality] == set // Cow King's Horns
+[Name] == StuddedLeather && [Quality] == set// // Cow King's Hide
+[Name] == HeavyBoots && [Quality] == set # [Dexterity] == 20 && [ItemMagicBonus] == 25 // Cow King's Hooves
 
 // # The Disciple #
 //[Type] == amulet && [Quality] == set # [ItemAllSkills] == 1 && [ColdResist] == 18 // Telling of Beads
@@ -117,9 +117,9 @@
 
 // #Griswold's Legacy #
 //[Name] == OrnatePlate && [Quality] == set # [Defense] >= 920 // Griswold's Heart
-//[Name] == Corona && [Quality] == set # [EnhancedDefense] >= 55 // Griswold's Valor
-//[Name] == Caduceus && [Quality] == set # [Sockets] >= 3 && [EnhancedDamage] >= 200 // Griswold's Redemption
-//[Name] == VortexShield && [Quality] == set # [Defense] >= 290 // Griswold's Honor
+[Name] == Corona && [Quality] == set// # [EnhancedDefense] >= 55 // Griswold's Valor
+[Name] == Caduceus && [Quality] == set// # [Sockets] >= 3 && [EnhancedDamage] >= 200 // Griswold's Redemption
+[Name] == VortexShield && [Quality] == set// # [Defense] >= 290 // Griswold's Honor
 
 // # Heaven's Brethren #
 //[Name] == Cuirass && [Quality] == set // Haemosu's Adamant
@@ -137,7 +137,7 @@
 //[Name] == WarBelt && [Quality] == set // Immortal King's Detail
 //[Name] == AvengerGuard && [Quality] == set // Immortal King's Will
 //[Name] == OgreMaul && [Quality] == set // Immortal King's Stone Crusher
-//[Name] == SacredArmor && [Quality] == set // Immortal King's Soul Cage
+[Name] == SacredArmor && [Quality] == set // Immortal King's Soul Cage
 //[Name] == WarGauntlets && [Quality] == set // Immortal King's Forge
 //[Name] == WarBoots && [Quality] == set // Immortal King's Pillar
 
@@ -150,7 +150,7 @@
 
 // # Natalya's Odium #
 //[Name] == GrimHelm && [Quality] == set // Natalya's Totem
-//[Name] == ScissorsSuwayyah && [Quality] == set // Natalya's Mark
+[Name] == ScissorsSuwayyah && [Quality] == set // Natalya's Mark
 //[Name] == LoricatedMail && [Quality] == set // Natalya's Shadow
 //[Name] == MeshBoots && [Quality] == set // Natalya's Soul
 
@@ -179,13 +179,13 @@
 // # Tal Rasha's Wrappings #
 //[Name] == SwirlingCrystal && [Quality] == set // Tal Rasha's Lidless Eye
 //[Name] == DeathMask && [Quality] == set // Tal Rasha's Horadric Crest
-//[Name] == LacqueredPlate && [Quality] == set # [Defense] >= 840 // Tal Rasha's Guardianship
-//[Type] == amulet && [Quality] == set # [SorceressSkills] == 2 // Tal Rasha's Adjucation
+[Name] == LacqueredPlate && [Quality] == set # [Defense] >= 840 // Tal Rasha's Guardianship
+[Type] == amulet && [Quality] == set # [SorceressSkills] == 2 // Tal Rasha's Adjucation
 //[Name] == MeshBelt && [Quality] == set # [ItemMagicBonus] >= 10 // Tal Rasha's Fine-Spun Cloth
 
 // # Trang-Oul's Avatar #
 //[Name] == BoneVisage && [Quality] == set // Trang-Oul's Guise
 //[Name] == ChaosArmor && [Quality] == set // Trang-Oul's Scales
 //[Name] == CantorTrophy && [Quality] == set // Trang-Oul's Wing
-//[Name] == TrollBelt && [Quality] == set // Trang-Oul's Girth
+[Name] == TrollBelt && [Quality] == set // Trang-Oul's Girth
 //[Name] == HeavyBracers && [Quality] == set // Trang-Oul's Claws

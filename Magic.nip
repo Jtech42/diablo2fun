@@ -15,13 +15,13 @@
 [Type] == Amulet && [Quality] == Magic # ([LightningSkillTab] == 3 || [ElementalSkillTab] == 3 || [PoisonAndBoneSkillTab] == 3 || [PaliCombatSkillTab] == 3 || [TrapsSkillTab] == 3) && ([MaxHP] >= 90 || [HPRegen] == 15 || [FCR] == 10 || [Dexterity] == 30 || [Energy] == 30 || [NormalDamageReduction] >= 24 || [MagicDamageReduction] == 6 || [ItemGoldBonus] == 80 || [Strength] == 30)
 
 //MAGIC MF AMULET
-//[Type] == Amulet && [Quality] == Magic # [ItemMagicBonus] >= 50
+[Type] == Amulet && [Quality] == Magic # [ItemMagicBonus] >= 50
 
 //MAGIC +2 CLASS AMULET
-//[Type] == Amulet && [Quality] == Magic # [ItemAddClassSkills] == 2 && [MaxHP] >= 100
+[Type] == Amulet && [Quality] == Magic # [ItemAddClassSkills] == 2 && [MaxHP] >= 100
 
 //MAGIC +3 TREE AMULET
-//[Type] == Amulet && [Quality] == Magic # ([ColdSkillTab] == 3 || [FireSkillTab] == 3 || [LightningSkillTab] == 3 || [ElementalSkillTab] == 3 || [PoisonAndBoneSkillTab] == 3 || [PaliCombatSkillTab] == 3 || [TrapsSkillTab] == 3) && [FCR] == 10
+[Type] == Amulet && [Quality] == Magic # ([ColdSkillTab] == 3 || [FireSkillTab] == 3 || [LightningSkillTab] == 3 || [ElementalSkillTab] == 3 || [PoisonAndBoneSkillTab] == 3 || [PaliCombatSkillTab] == 3 || [TrapsSkillTab] == 3) && [FCR] == 10
 [Type] == Amulet && [Quality] == Magic # ([ColdSkillTab] == 3 || [FireSkillTab] == 3 || [LightningSkillTab] == 3 || [ElementalSkillTab] == 3 || [PoisonAndBoneSkillTab] == 3 || [PaliCombatSkillTab] == 3 || [TrapsSkillTab] == 3) && [MaxHP] == 90
 [Type] == Amulet && [Quality] == Magic # (([DruidSummoningSkillTab] == 3) || ([NecromancerSummoningSkillTab] == 3) || ([WarcriesSkillTab] == 3)) && [MaxHP] >= 100
 [Type] == Amulet && [Quality] == Magic # [WarcriesSkillTab] == 3 && [ItemGoldBonus] >= 75

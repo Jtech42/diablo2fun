@@ -9,9 +9,9 @@
 [Name] == key 
 
 //##########KEYS##########
-//[Name] == KeyOfTerror # # [MaxQuantity] == 3
-//[Name] == KeyOfHate # # [MaxQuantity] == 3
-[Name] == KeyOfDestruction # # [MaxQuantity] == 3
+[Name] == KeyOfTerror # # [MaxQuantity] == 113
+[Name] == KeyOfHate # # [MaxQuantity] == 113
+[Name] == KeyOfDestruction # # [MaxQuantity] == 113
 
 //##########ORGANS##########
 [Name] == Mephisto'sBrain
@@ -52,13 +52,13 @@
 //[Name] == DolRune # # [MaxQuantity] == 3
 //[Name] == HelRune # # [MaxQuantity] == 3
 //[Name] == IoRune # # [MaxQuantity] == 3
-//[Name] == LumRune # # [MaxQuantity] == 3
-//[Name] == KoRune # # [MaxQuantity] == 3
-//[Name] == FalRune # # [MaxQuantity] == 3
-//[Name] == LemRune # # [MaxQuantity] == 3
-//[Name] == PulRune # # [MaxQuantity] == 5
-//[Name] == UmRune # # [MaxQuantity] == 5
-//[Name] == MalRune # # [MaxQuantity] == 5
+[Name] == LumRune # # [MaxQuantity] == 3
+[Name] == KoRune # # [MaxQuantity] == 3
+[Name] == FalRune # # [MaxQuantity] == 3
+[Name] == LemRune # # [MaxQuantity] == 3
+[Name] == PulRune # # [MaxQuantity] == 5
+[Name] == UmRune # # [MaxQuantity] == 5
+[Name] == MalRune # # [MaxQuantity] == 5
 [Name] >= IstRune && [Name] <= ZodRune
 
 //##########GEMS##########
@@ -84,19 +84,19 @@
 //[Name] == Sapphire # # [MaxQuantity] == 1
 //[Name] == Topaz # # [MaxQuantity] == 1
 //[Name] == FlawlessAmethyst # # [MaxQuantity] == 3
-//[Name] == FlawlessDiamond # # [MaxQuantity] == 3
+[Name] == FlawlessDiamond # # [MaxQuantity] == 3
 //[Name] == FlawlessEmerald # # [MaxQuantity] == 3
 //[Name] == FlawlessRuby # # [MaxQuantity] == 3
 //[Name] == FlawlessSapphire # # [MaxQuantity] == 3
 //[Name] == FlawlessSkull # # [MaxQuantity] == 3
 //[Name] == FlawlessTopaz # # [MaxQuantity] == 3
-//[Name] == PerfectAmethyst # # [MaxQuantity] == 3
-//[Name] == PerfectDiamond # # [MaxQuantity] == 3
-//[Name] == PerfectEmerald # # [MaxQuantity] == 3
-//[Name] == PerfectRuby # # [MaxQuantity] == 3
-//[Name] == PerfectSapphire # # [MaxQuantity] == 3
-//[Name] == PerfectSkull # # [MaxQuantity] == 3
-//[Name] == PerfectTopaz # # [MaxQuantity] == 3
+[Name] == PerfectAmethyst # # [MaxQuantity] == 3
+[Name] == PerfectDiamond # # [MaxQuantity] == 3
+[Name] == PerfectEmerald # # [MaxQuantity] == 3
+[Name] == PerfectRuby # # [MaxQuantity] == 3
+[Name] == PerfectSapphire # # [MaxQuantity] == 3
+[Name] == PerfectSkull # # [MaxQuantity] == 3
+[Name] == PerfectTopaz # # [MaxQuantity] == 3
 
 //##########POTIONS##########
 [Name] == SuperHealingPotion

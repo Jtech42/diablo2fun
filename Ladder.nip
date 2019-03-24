@@ -1,42 +1,9 @@
-
-
-
-
-
-
-
-// PM BLANKEY AT JSP IF FOUND
-[Type] == Pelt && [Quality] <= superior # ([Sockets] == 0 || [Sockets] == 3) && [SkillMaul] >= 3 && [SkillWereBear] >= 1 && [ItemLevelReq] <= 12
-	
-
-//[Name] == Greaves && [Quality] == Unique
-[Name] == SerpentskinArmor && [Quality] == Unique && [Flag] != Ethereal # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 140	//SKIN OF THE VIPERMAGI
-[Name] == LightGauntlets && [Quality] == Unique && [Flag] != Ethereal  # [EnhancedDefense] >= 30	
-//[Type] == Amulet && [Quality] == Set # [SorceressSkills] == 2	
-//([Name] == CrypticAxe || [Name] == Thresher) && [Quality] <= Superior # [Sockets] == 4 														//Infinity, Insight, Pride, BotD
-//[Name] == GiantThresher && [Quality] <= Superior # [Sockets] == 4 
-//[Name] == GrimShield && [Quality] == Unique
-//[Name] == DeathMask && [Quality] == Set	
-//[Name] == ColossusVoulge && [Quality] <= Superior # [Sockets] == 4
-//[Name] == SwirlingCrystal && [Quality] == Unique 
-//[Name] == BoneKnife && [Quality] == Unique # # [MaxQuantity] == 1	
-//[Name] == Flail && [Quality] <= Superior # [Sockets] == 5 //|| [Sockets] == 4
-//[Name] == CrystalSword && [Quality] <= Superior # [Sockets] == 5																	//Spirit, CtA
-//[Name] == CrystalSword && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 6 || [Sockets] == 5)																									//CtA
-//[Name] == CrystalSword && [Quality] < Superior # [Sockets] == 6	
-//[Name] == CrystalSword && [Quality] <= Superior # [Sockets] == 4
-//[Name] == RuneSword && [Quality] <= Superior # [Sockets] == 4
-//[Name] == BroadSword && [Quality] <= Superior # [Sockets] == 4
-//[Name] == LongSword && [Quality] <= Superior # [Sockets] == 4
-
-//[Name] == Espandon && [Quality] == Unique # [EnhancedDamage] >= 200		
-
+[Name] == LightGauntlets && [Quality] == Unique && [Flag] != Ethereal  # [EnhancedDefense] >= 30		
 [Name] == MatriarchalBow && [Quality] <= Superior # [BowAndCrossbowSkillTab] == 3 && [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)								//Brand, Faith, Harmony, Ice, Wrath, CtA
-[Name] == GrandMatronBow && [Quality] <= Superior # [BowAndCrossbowSkillTab] == 3 && [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)														//Brand, Faith, Harmony, Ice, Wrath, CtA
-[Name] == GreatBow && [Quality] <= Superior # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4)																									//Brand, Faith, Harmony, Ice, Wrath
-([Name] == CrusaderBow || [Name] == DiamondBow || [Name] == HydraBow || [Name] == ShadowBow || [Name] == WardBow) && [Quality] <= Superior # [EnhancedDamage] >= 15 && [Sockets] == 4						//Brand, Faith, Harmony, Ice, Wrath
-([Name] == CrusaderBow || [Name] == HydraBow || [Name] == ShadowBow) && [Quality] <= Superior # [EnhancedDamage] >= 15 && [Sockets] == 6																	//BotD
-
+[Name] == GrandMatronBow && [Quality] <= Superior # [BowAndCrossbowSkillTab] == 3 && [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)													
+[Name] == GreatBow && [Quality] <= Superior # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4)																							
+([Name] == CrusaderBow || [Name] == DiamondBow || [Name] == HydraBow || [Name] == ShadowBow || [Name] == WardBow) && [Quality] <= Superior # [EnhancedDamage] >= 15 && [Sockets] == 4				
+([Name] == CrusaderBow || [Name] == HydraBow || [Name] == ShadowBow) && [Quality] <= Superior # [EnhancedDamage] >= 15 && [Sockets] == 6															
 
 //Normal Early
 //[Type] == Boots && [Quality] == Rare
@@ -64,7 +31,11 @@
 //[Name] == Cap && [Quality] == Set
 
 //Nightmare Prep
-[Name] == ChainGloves && [Quality] == Unique
+//[Name] == ChainGloves && [Quality] == Unique
+//[Name] == Ring && [Quality] == Magic # [Mana] >= 100
+//[Type] == Ring && [Quality] == Rare # [FCR] >= 10 && [Mana] >= 80
+//[Name] == Amulet && [Quality] == Rare # [Mana] >= 80
+//[Name] == Amulet && [Quality] == Rare # ([ColdResist]+[FireResist]+[LightResist]) >= 110
 //[Name] == WarHat && [Quality] == Unique
 //[Name] == Belt && [Quality] == Unique
 //[Name] == HeavyBelt && [Quality] == Unique
@@ -113,36 +84,12 @@
 //[Name] == Pavise && [Quality] == Unique
 //[Name] == GrimShield && [Quality] == Unique
 //[Name] == Sallet && [Quality] == Unique
-[Type] == LacqueredPlate && [Quality] == Set
-[Type] == HeavyBracers && [Quality] == Set
-[Name] == GildedShield && [Quality] == Unique
-[Name] == Monarch && [Quality] == Unique
-[Name] == Ring && [Quality] == Magic # [Mana] >= 100
-[Type] == Ring && [Quality] == Rare # [FCR] >= 10 && [Mana] >= 80
-[Name] == Amulet && [Quality] == Rare # [Mana] >= 80
-[Name] == Amulet && [Quality] == Rare # ([ColdResist]+[FireResist]+[LightResist]) >= 110
-[Name] == Shako && [Quality] == Unique
-[Name] == MeshArmor && [Quality] == Unique 																									//Infinity, Insight, Pride
 
-[Name] == VampireboneGloves && [Quality] == Unique
-[Name] == Vambraces && [Quality] == Unique
-[Name] == Demonhead && [Quality] == Unique && [Flag] != Ethereal				//ANDARIEL's VISAGE
-[Name] == Demonhead && [Quality] == Unique && [Flag] == Ethereal
-[Name] == Quarterstaff && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDamage] >= 300	//RIBCRACKER
-[Name] == Quarterstaff && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDamage] >= 300	//Ethereal RIBCRACKER
-[Name] == HierophantTrophy && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 200	
-[Name] == SlayerGuard && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 200 && [LifeLeech] >= 3																											//ARREAT'S FACE
-[Name] == SlayerGuard && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 200 && [LifeLeech] >= 3	
-[Name] == Yari && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDamage] >= 200			//Ethereal HONE SUNDAN
-[Name] == GrimHelm && [Quality] == Unique && [Flag] != Ethereal					//VAMPIRE GAZE
-[Name] == GrimHelm && [Quality] == Unique && [Flag] == Ethereal					//Ethereal VAMPIRE GAZE
-[Name] == SwirlingCrystal && [Quality] == Unique 		//Ethereal THE OCULUS
-[Name] == Boots && [Quality] == Unique					//HOTSPUR
-[Name] == DemonhideBoots && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 150 && [ItemGoldBonus] >= 70							//INFERNOSTRIDE
-//[Name] == SharkskinBoots && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 100 && [MaxHP] >= 65	
-//[Name] == GreaterTalons && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDamage] >= 200 && [LifeLeech] >= 9																												//BARTUC'S CUT-THROAT
-[Name] == GreaterTalons && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDamage] >= 200 && [LifeLeech] >= 9																												//Ethereal BARTUC'S CUT-THROAT
-[Name] == WristSword && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDamage] >= 240 && [MartialArtsSkillTab] >= 2 && [ShadowDisciplinesSkillTab] >= 2 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 200	//JADE TALON
+// PM BLANKEY AT JSP IF FOUND
+[Type] == Pelt && [Quality] <= superior # ([Sockets] == 0 || [Sockets] == 3) && [SkillMaul] >= 3 && [SkillWereBear] >= 1 && [ItemLevelReq] <= 12
+
+
+
 
 
 
