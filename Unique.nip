@@ -145,6 +145,8 @@
 [Name] == GreaterTalons && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDamage] >= 200 && [LifeLeech] >= 9                            //BARTUC'S CUT-THROAT
 [Name] == GreaterTalons && [Quality] == Unique //&& [Flag] == Ethereal # [EnhancedDamage] >= 200 && [LifeLeech] >= 9                            //Ethereal BARTUC'S CUT-THROAT
 [Name] == WristSword && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDamage] >= 240 && [MartialArtsSkillTab] >= 2 && [ShadowDisciplinesSkillTab] >= 2 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 200 //JADE TALON
+[Name] == BattleCestus && [Quality] == Unique
+[Name] == FeralClaws && [Quality] == Unique
 
 //UNIQUE BARBARIAN 
 [Name] == SlayerGuard && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 200 && [LifeLeech] >= 6

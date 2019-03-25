@@ -164,3 +164,12 @@
 ([Name] == RunicTalons || [Name] == ScissorsSuwayyah) && [Quality] <= Superior && [Flag] != Ethereal # [SkillLightningSentry] >= 3 && [SkillWakeOfInferno] >= 2 && ([Sockets] == 0 || [Sockets] == 3)										//Chaos, Fury
 ([Name] == RunicTalons || [Name] == ScissorsSuwayyah) && [Quality] <= Superior && [Flag] != Ethereal # [SkillDragonFlight] >= 2 && [SkillMindBlast] >= 3 && ([Sockets] == 0 || [Sockets] == 3)												//Chaos, Fury
 ([Name] == RunicTalons || [Name] == ScissorsSuwayyah) && [Quality] <= Superior && [Flag] != Ethereal # [SkillShadowMaster] >= 1 && [SkillWeaponBlock] >= 1 && [SkillVenom] >= 1 && ([Sockets] == 0 || [Sockets] == 3)						//Chaos, Fury
+
+
+
+//POD
+// Assassin Runeword Claw Bases
+//([Name] == GreaterTalons || [Name] == GreaterClaws || [Name] == Suwayyah) && [Quality] <= Superior && [Flag] != Ethereal # [SkillLightningSentry] >= 3 && ([Sockets] == 0 || [Sockets] == 3)					//Chaos, Fury
+//([Name] == RunicTalons || [Name] == ScissorsSuwayyah) && [Quality] <= Superior && [Flag] != Ethereal # [SkillBladeShield] >= 3 && ([Sockets] == 0 || [Sockets] == 3)										//Chaos, Fury
+[Type] == assassinclaw && [Class] == elite && [Quality] <= superior && [Flag] != ethereal # ([Sockets] == 0 || [Sockets] == 3) && [skillbladeshield] == 3 && ([skillfade] >= 1 || [skillwakeoffire] >= 1 || [skillburstofspeed] >= 1) // chaos
+

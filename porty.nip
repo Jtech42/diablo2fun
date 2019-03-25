@@ -206,21 +206,13 @@
 ([name] == thresher || [name] == giantthresher) && [quality] == superior && [flag] == ethereal # [sockets] == 4
 [name] == giantthresher && [quality] == unique
 
-//          ==unique==
-[name] == mightyscepter && [quality] == unique && [flag] == ethereal # [enhanceddamage] == 300 && [paladinskills] == 3 && [sockets] == 2 // heaven's light
-[name] == mightyscepter && [quality] == unique && [flag] == ethereal # [enhanceddamage] == 300 && [itemnormaldamage] == 120 // redeemer
-[name] == caduceus && [quality] == unique && [flag] == ethereal # [enhanceddamage] == 290 && [palicombatskilltab] == 4 && [itemtohitpercent] == 200 // astreon's iron ward
 //          ==white==
 [name] == warpike && [quality] <= superior && [flag] == ethereal # [enhanceddamage] >= 5 && ([sockets] == 0 || [sockets] == 6)
 [Name] == ElderStaff && [Quality] == unique # [ItemAllSkills] >= 3 // Ondal's Wisdom
 [Name] == archonstaff && [Quality] == unique # [ItemAllSkills] == 5 // Mang song's lesson
 [Name] == PhaseBlade && [Quality] == Unique // azure, LS
 [name] == thresher && [quality] == unique # [enhanceddamage] >= 220
-//          ==unique==
-[name] == unearthedwand && [quality] == unique //death's web
-//          ==unique==
-[Name] == ceremonialjavelin && [Quality] == unique # [enhancedDamage] >= 170 && [lifeLeech] >= 5 // Titan's Revenge
-[name] == matriarchaljavelin && [quality] == unique # [javelinandspearskilltab] == 4 // thunderstroke
+
 
 [name] == wingedknife && [quality] == unique
 //          ==magic==
