@@ -19,7 +19,7 @@
 
 //UNIQUE BOOTS
 [Name] == Boots && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 20                
-[Name] == DemonhideBoots && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 150 && [ItemGoldBonus] >= 70       
+[Name] == DemonhideBoots && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 150 && [ItemGoldBonus] >= 70       
 [Name] == SharkskinBoots && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 100 && [MaxHP] >= 65         //WATERWALK
 [Name] == BattleBoots && [Quality] == Unique //&& [Flag] != Ethereal # [ItemMagicBonus] >= 50               //WAR TRAVELER
 [Name] == WarBoots && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 200               //GORE RIDER
@@ -30,9 +30,9 @@
 
 //UNIQUE HELMS
 //[Name] == SkullCap && [Quality] == Unique //&& [Flag] == Ethereal # [ItemMagicBonus] == 50                         //Ethereal TARNHELM
-[Name] == Sallet && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 160 && [ColdResist] >= 40 && [FireResist] >= 50 && [LightResist] >= 40         //ROCK STOPPER
+[Name] == Sallet && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 160 && [ColdResist] >= 40 && [FireResist] >= 50 && [LightResist] >= 40         //ROCK STOPPER
 [Name] == Casque && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 200 && [ItemMagicBonus] >= 50                   //STEALSKULL                   //Ethereal STEALSKULL
-[Name] == GrandCrown && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] == 200 && [ItemGoldBonus] >= 100 && [LifeLeech] >= 12             //CROWN OF THEIVES
+[Name] == GrandCrown && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] == 200 && [ItemGoldBonus] >= 100 && [LifeLeech] >= 12             //CROWN OF THEIVES
 [Name] == GrimHelm && [Quality] == Unique //&& [Flag] != Ethereal # [LifeLeech] >= 6 && [ManaLeech] >= 6 && [DamageResist] >= 20 && [MagicDamageReduction] >= 1        //VAMPIRE GAZE
 [Name] == Shako && [Quality] == Unique //&& [Flag] != Ethereal # [Defense] >= 141                            //HARLEQUIN CREST
 [Name] == SpiredHelm && [Quality] == Unique //&& [Flag] != Ethereal # [Dexterity] >= 1 && [PassiveColdMastery] >= 15 && [ItemAbsorbCold] >= 1             //NIGHTWING'S VEIL

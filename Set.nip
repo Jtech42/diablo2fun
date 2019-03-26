@@ -160,7 +160,7 @@
 //[Name] == ElderStaff && [Quality] == set // Naj's Puzzler
 
 // # Orphan's Call #
-//[Name] == WingedHelm && [Quality] == set // Guillaume's Face
+[Name] == WingedHelm && [Quality] == set // Guillaume's Face
 //[Name] == RoundShield && [Quality] == set // Whistan's Guard
 //[Name] == SharkskinGloves && [Quality] == set // Magnus' Skin
 //[Name] == BattleBelt && [Quality] == set // Wilhelm's Pride
