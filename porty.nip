@@ -9,8 +9,6 @@
 [name] == superhealingpotion
 [name] == rejuvenationpotion
 [name] == fullrejuvenationpotion
-[name] == festeringessenceofdestruction # # [maxquantity] == 5
-[name] == burningessenceofterror # # [maxquantity] == 4
 [Type] == Gold # [Gold] >= 6000
 
 

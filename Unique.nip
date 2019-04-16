@@ -31,7 +31,7 @@
 //UNIQUE HELMS
 //[Name] == SkullCap && [Quality] == Unique //&& [Flag] == Ethereal # [ItemMagicBonus] == 50                         //Ethereal TARNHELM
 [Name] == Sallet && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 160 && [ColdResist] >= 40 && [FireResist] >= 50 && [LightResist] >= 40         //ROCK STOPPER
-[Name] == Casque && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 200 && [ItemMagicBonus] >= 50                   //STEALSKULL                   //Ethereal STEALSKULL
+[Name] == Casque && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 200 && [ItemMagicBonus] >= 50                   //STEALSKULL                   //Ethereal STEALSKULL
 [Name] == GrandCrown && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] == 200 && [ItemGoldBonus] >= 100 && [LifeLeech] >= 12             //CROWN OF THEIVES
 [Name] == GrimHelm && [Quality] == Unique //&& [Flag] != Ethereal # [LifeLeech] >= 6 && [ManaLeech] >= 6 && [DamageResist] >= 20 && [MagicDamageReduction] >= 1        //VAMPIRE GAZE
 [Name] == Shako && [Quality] == Unique //&& [Flag] != Ethereal # [Defense] >= 141                            //HARLEQUIN CREST
@@ -156,7 +156,7 @@
 [Name] == ConquerorCrown && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 155 && [SkillBattleCommand] >= 2 && [SkillBattleOrders] >= 2 && [HPRegen] >= 23            //HALABERD'S REIGN
 
 //UNIQUE DRUID
-[Name] == TotemicMask && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 200                     //JALAL'S MANE
+[Name] == TotemicMask && [Quality] == Unique //&& [Flag] != Ethereal # [EnhancedDefense] >= 200                     //JALAL'S MANE
 [Name] == BloodSpirit && [Quality] == Unique //&& [Flag] != Ethereal # [LifeLeech] >= 7 && [ShapeShiftingSkillTab] >= 4 && [SkillFeralRage] >= 2 && [ItemToHitPercent] >= 60  //CEREBUS' BITE
 [Name] == SkySpirit && [Quality] == Unique //&& [Flag] != Ethereal # [Energy] >= 20 && [PassiveFirePierce] >= 20 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 100 //RAVENLORE
 [Name] == EarthSpirit && [Quality] == Unique //&& [Flag] != Ethereal # [DruidSkills] >= 2 && [FireResist] >= 30 && [ItemAbsorbLight] >= 14 && [ItemAbsorbColdPercent] >= 25  //SPIRIT KEEPER
