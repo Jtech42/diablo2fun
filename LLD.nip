@@ -59,10 +59,10 @@
 //=== WEAPONS =====================================================================================================================================================================
 //=================================================================================================================================================================================
 
-([name] == broadsword || [name] == longsword || [name] == runesword) && [quality] == superior # ([sockets] == 0 || [sockets] == 4) && [enhanceddamage] == 15 && [tohit] == 3 // spirit
-[name] == crystalsword && [quality] == superior # [enhanceddamage] == 15 && [tohit] == 3 && [sockets] == 4 // spirit
-([name] == crowbill || [name] == naga) && [quality] == superior && [flag] != ethereal # [enhanceddamage] == 15 && [tohit] == 3 && ([sockets] == 0 || [sockets] == 5 || [sockets] == 6) // honor/robo
-[name] == grimscythe && [quality] == superior && [flag] != ethereal # [enhanceddamage] == 15 && [tohit] == 3 && ([sockets] == 0 || [sockets] == 6)
+//([name] == broadsword || [name] == longsword || [name] == runesword) && [quality] == superior # ([sockets] == 0 || [sockets] == 4) && [enhanceddamage] == 15 && [tohit] == 3 // spirit
+//[name] == crystalsword && [quality] == superior # [enhanceddamage] == 15 && [tohit] == 3 && [sockets] == 4 // spirit
+//([name] == crowbill || [name] == naga) && [quality] == superior && [flag] != ethereal # [enhanceddamage] == 15 && [tohit] == 3 && ([sockets] == 0 || [sockets] == 5 || [sockets] == 6) // honor/robo
+//[name] == grimscythe && [quality] == superior && [flag] != ethereal # [enhanceddamage] == 15 && [tohit] == 3 && ([sockets] == 0 || [sockets] == 6)
 [name] == knout && [quality] == superior # [enhanceddamage] == 15 && [tohit] == 3 && ([sockets] == 0 || [sockets] == 5) // honor
 [name] == executionersword && [quality] == superior # [enhanceddamage] == 15 && [tohit] == 3 && ([sockets] == 0 || [sockets] == 5 || [sockets] == 6) // honor/robo
 ([name] == warscepter || [name] == divinescepter) && [quality] <= superior # ([sockets] == 0 || [sockets] == 5) && [skillconcentration]+[skillblessedhammer] >= 5

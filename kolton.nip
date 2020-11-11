@@ -617,7 +617,7 @@
 //[name] == flawlessemerald
 //[name] == flawlessdiamond # # [maxquantity] == 3
 
-//[name] == elrune # # [MaxQuantity] == 1
+//[name] == elrune # # [MaxQuantity] == 5
 //[name] == eldrune # # [MaxQuantity] == 1
 //[name] == tirrune # # [MaxQuantity] == 1
 //[name] == nefrune
