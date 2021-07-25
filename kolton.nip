@@ -266,7 +266,8 @@
 [name] == berserkeraxe && [quality] == unique //&& [flag] == ethereal // death cleaver
 
 //          ==rare==
-[type] == axe && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 249 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+[type] == axe && [quality] == crafted # [enhanceddamage] >= 249 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400 || [enhanceddamage] >= 249 && ([ias] == 20 || [sockets] == 2)
+[type] == axe && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 249 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400 || [enhanceddamage] >= 249 && ([ias] == 20 || [sockets] == 2)
 [quality] == rare # [enhanceddamage] >= 249 && [itemtohitperlevel] >= 1 && ([ias] == 20 || [sockets] == 2) 
 [quality] == rare # [enhanceddamage] >= 400 && ([ias] == 20 || [sockets] == 2)
 
@@ -298,7 +299,7 @@
 [name] == fangedknife && [quality] == unique && [flag] == ethereal # [enhanceddamage] == 300 // fleshripper
 
 //          ==rare==
-[type] == knife && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+[type] == knife && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400 || [enhanceddamage] >= 249 && ([ias] == 20 || [sockets] == 2)
 ([name] == kris || [name] == cinquedeas || [name] == fangedknife) && [quality] == rare # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && [ias] >= 40 && [sockets] == 2
 
 //          ==magic==
@@ -311,7 +312,7 @@
 [name] == ghostglaive && [quality] == unique # [enhanceddamage] == 190 && [lifeleech] == 13
 
 //          ==rare==
-[type] == javelin && [quality] == rare && [flag] == ethereal # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0)
+[type] == javelin && [quality] == rare && [flag] == ethereal # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0) || [enhanceddamage] >= 249 && ([ias] == 20 || [sockets] == 2)
 
 //          ==magic==
 
@@ -326,7 +327,7 @@
 [name] == scourge && [quality] == unique && [flag] == ethereal # [enhanceddamage] >= 300 //stormlash
 
 //          ==rare==
-[type] == mace && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+[type] == mace && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400 || [enhanceddamage] >= 249 && ([ias] == 20 || [sockets] == 2)
 
 //          ==magic==
 
@@ -345,7 +346,7 @@
 [name] == crypticaxe && [quality] == unique && [flag] == ethereal # [sockets] == 3 // tomb reaver
 
 //          ==rare==
-[type] == polearm && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+[type] == polearm && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400 || [enhanceddamage] >= 249 && ([ias] == 20 || [sockets] == 2)
 
 //          ==magic==
 
@@ -362,7 +363,7 @@
 [name] == caduceus && [quality] == unique && [flag] == ethereal # [enhanceddamage] == 290 && [palicombatskilltab] == 4 && [itemtohitpercent] == 200 // astreon's iron ward
 
 //          ==rare==
-[type] == scepter && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+[type] == scepter && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400 || [enhanceddamage] >= 249 && ([ias] == 20 || [sockets] == 2)
 [type] == scepter && [quality] == rare # [skillblessedhammer]+[skillconcentration]+[palicombatskilltab]+[paladinskills] >= 8
 [type] == scepter && [quality] == rare # [skillfistoftheheavens]+[skillconviction]+[palicombatskilltab]+[paladinskills] >= 8
 [type] == scepter && [quality] == rare # [skillholyshield]+[paladinskills]+[palicombatskilltab] >= 5
@@ -381,7 +382,7 @@
 [name] == ghostspear && [quality] == unique && [flag] == ethereal && [flag] == identified # [enhanceddamage] == 200 // hone sundan x1
 
 //          ==rare==
-[type] == spear && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+[type] == spear && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400 || [enhanceddamage] >= 249 && ([ias] == 20 || [sockets] == 2)
 
 //          ==magic==
 
@@ -421,7 +422,7 @@
 //[name] == battlesword && [quality] == unique && [flag] == ethereal // headstriker
 
 //          ==rare==
-[type] == sword && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400
+[type] == sword && [quality] == rare && [flag] == ethereal # [enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400 || [enhanceddamage] >= 249 && ([ias] == 20 || [sockets] == 2)
 ([name] == scimitar || [name] == cutlass || [name] == ataghan) && [quality] == rare # ([enhanceddamage] >= 250 && [itemtohitperlevel] >= 1 || [enhanceddamage] >= 400) && [ias] >= 40 && [sockets] == 2
 
 //          ==magic==
@@ -775,7 +776,6 @@
 [type] == amulet && [quality] == crafted # [itemaddclassskills] >= 2 && [fcr] >= 10 && ([strength]+[dexterity] >= 25 || [maxhp]+[maxmana] >= 50)
 
 [name] == jewel && [quality] == rare # [fireresist] >= 35
-[type] == boots && [quality] == crafted # [maxmana] >= 40 && [itemmaxmanapercent] >= 4
 
 // unid packs
 //([name] == assaulthelmet || [name] == avengerguard || [name] == savagehelmet || [name] == slayerguard || [name] == conquerorcrown || [name] == guardiancrown) && [quality] == rare && [color] == white
