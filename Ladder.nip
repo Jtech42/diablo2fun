@@ -1,8 +1,5 @@
-//Pickit by Kolton
-//crafted items will come later as a separate section
-
-//shit for phil
-([name] == caduceus || [name] == warscepter || [name] == divinescepter) && [flag] != ethereal && [quality] == superior # [sockets] == 4 # [maxquantity] == 1
+//shit for phil, rift weapon
+//([name] == caduceus || [name] == warscepter || [name] == divinescepter) && [flag] != ethereal && [quality] == superior # [sockets] == 4 # [maxquantity] == 1
 
 //--------rings----------
 
@@ -65,10 +62,10 @@
 [name] == duskshroud && [quality] == unique && [flag] != ethereal # [passivefiremastery] == 15 && [skillfireball] == 3 //ormus
 [name] == duskshroud && [quality] == unique && [flag] != ethereal # [passiveltngmastery] == 15 && ([skilllightning] == 3 || [skillnova] == 3) //ormus
 //[name] == duskshroud && [quality] == unique # [skillenergyshield] == 3 //ormus
-[name] == wirefleece && [quality] == unique && [flag] == ethereal
-[name] == balrogskin && [quality] == unique
-[name] == krakenshell && [quality] == unique 
-[name] == shadowplate && [quality] == unique
+//[name] == wirefleece && [quality] == unique && [flag] == ethereal
+//[name] == balrogskin && [quality] == unique
+//[name] == krakenshell && [quality] == unique 
+//[name] == shadowplate && [quality] == unique
 [name] == sacredarmor && [quality] == unique 
 //[name] == serpentskinarmor && [quality] == unique # [fireresist] == 30 && [magicdamagereduction] == 13 // skin of the vipermagi
 [name] == wyrmhide && [quality] == unique # [defense] == 1034 // skin of the vipermagi x1
@@ -534,7 +531,6 @@
 
 //          ==unique==
 //[name] == slayerguard && [quality] == unique
-[name] == guardiancrown && [quality] == unique # [defense] == 504 || [defense] == 756 // arreat's face x1
 //[name] == slayerguard && [quality] == unique && [flag] == ethereal // arreat's face
 //[name] == furyvisor && [quality] == unique
 
@@ -600,56 +596,6 @@
 //          ==magic==
 [type] == auricshields && [class] >= exceptional && [quality] == magic && [flag] != ethereal # ([paladinskills] == 2 || [sockets] == 4) && [fbr] == 30 && ([fireresist] >= 40 || [enhanceddamage] >= 60)
 
-// MISC
-
-//-----runes-----
-
-[name] == greatermanapotion
-[name] == supermanapotion
-[name] == superhealingpotion
-[name] == rejuvenationpotion
-[name] == fullrejuvenationpotion
-
-[name] == perfectamethyst || [name] == perfecttopaz || [name] == perfectdiamond || [name] == perfectsapphire
-//[name] == emerald
-//[name] == flawlessemerald
-[name] == flawlessamethyst # # [maxquantity] == 3
-//[name] == flawlesstopaz # # [maxquantity] == 3
-//[name] == flawlessdiamond # # [maxquantity] == 3
-
-//[name] == elrune # # [MaxQuantity] == 3
-//[name] == eldrune # # [MaxQuantity] == 1
-//[name] == tirrune # # [MaxQuantity] == 1
-//[name] == nefrune # # [MaxQuantity] == 1
-//[name] == ethrune # # [MaxQuantity] == 3
-//[name] == ithrune # # [MaxQuantity] == 3
-//[name] == talrune # # [MaxQuantity] == 1
-//[name] == ralrune # # [MaxQuantity] == 1
-//[name] == ortrune # # [MaxQuantity] == 2
-//[name] == thulrune # # [MaxQuantity] == 2
-//[name] == amnrune # # [MaxQuantity] == 2
-//[name] == solrune # # [MaxQuantity] == 2
-//[name] == shaelrune # # [MaxQuantity] == 1
-//[name] == dolrune # # [MaxQuantity] == 3
-//[name] == helrune # # [MaxQuantity] == 1
-//[name] == iorune # # [MaxQuantity] == 1
-//[name] == lumrune # # [MaxQuantity] == 1
-//[name] == korune # # [MaxQuantity] == 4
-//[name] == falrune # # [MaxQuantity] == 4
-//[name] == lemrune # # [MaxQuantity] == 4
-[name] == pulrune # # [MaxQuantity] == 4
-[name] == umrune # # [MaxQuantity] == 4
-[name] == malrune # # [MaxQuantity] == 4
-
-[name] >= istrune && [name] <= zodrune
-
-//[name] == keyofhate # # [maxquantity] == 3
-//[name] == keyofterror # # [maxquantity] == 3
-//[name] == keyofdestruction # # [maxquantity] == 3
-
-[name] == diablo'shorn
-[name] == mephisto'sbrain
-[name] == baal'seye
 
 //----------jewels------------
 
@@ -674,7 +620,6 @@
 [name] == smallcharm && [quality] == magic # [maxdamage] == 4 && [tohit] == 20
 [name] == smallcharm && [quality] == magic # [maxhp] == 20 && ([coldmindam] == 10 && [coldmaxdam] == 20 || [lightmaxdam] == 71 || [firemindam] == 19 && [firemaxdam] == 29)
 [name] == smallcharm && [quality] == magic # [lightmaxdam] == 99 || [firemindam] == 26 && [firemaxdam] == 42 || [firemindam] == 19 && [firemaxdam] == 29 && [lightmaxdam] == 28 || [firemindam] == 7 && [firemaxdam] == 13 && [lightmaxdam] == 71
-[name] == smallcharm && [quality] == magic # [fireresist]+[lightresist]+[coldresist] >= 12
 [name] == smallcharm && [quality] == magic # [maxhp] == 20 && ([fireresist] > 3 && [lightresist] > 3 || [fireresist] > 9 || [lightresist] > 9 || [coldresist] > 9)
 [name] == smallcharm && [quality] == magic # [maxhp] >= 19 && ([fireresist] == 5 && [lightresist] == 5 || [fireresist] == 11 || [lightresist] == 11 || [coldresist] == 11)
 [name] == smallcharm && [quality] == magic # ([tohit] >= 36 || [maxdamage] == 3 || [maxmana] >= 17 || [fireresist] >= 11 || [coldresist] >= 11 || [lightresist] >= 11 || [fireresist] == 5 && [lightresist] == 5) && ([maxhp] >= 20 || [fhr] == 5 || [frw] == 3)
@@ -785,9 +730,9 @@
 [name] == tokenofabsolution
 
 // temp
-
+//[name] == smallcharm && [quality] == magic # [fireresist]+[lightresist]+[coldresist] >= 12
 //([name] == crystalsword || [name] == flail || [name] == waraxe || [name] == militarypick) && [quality] <= superior # [sockets] == 6 # [maxquantity] == 1
-([name] == flail || [name] == crystalsword || [name] == militarypick || [name] == waraxe || [name] == doubleaxe) && [quality] <= superior # [sockets] == 5 # [maxquantity] == 1 // shitty CTA BASE
+//([name] == flail || [name] == crystalsword || [name] == militarypick || [name] == waraxe || [name] == doubleaxe) && [quality] <= superior # [sockets] == 5 # [maxquantity] == 1 // shitty CTA BASE
 
 //([name] == assaulthelmet || [name] == avengerguard || [name] == savagehelmet || [name] == slayerguard || [name] == conquerorcrown || [name] == guardiancrown) && [quality] == rare # [barbarianskills] == 2 && [itemtohitpercentperlevel] > 0
 

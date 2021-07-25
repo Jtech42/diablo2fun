@@ -1,24 +1,29 @@
 function LoadConfig() {
+	/* Sequence config
+	 * Set to true if you want to run it, set to false if not.
+	 * If you want to change the order of the scripts, just change the order of their lines by using cut and paste.
+	 */
+
 	// User addon script. Read the description in libs/bots/UserAddon.js
 	Scripts.UserAddon = false; // !!!YOU MUST SET THIS TO FALSE IF YOU WANT TO RUN BOSS/AREA SCRIPTS!!!
-	// Team MF system
-	Config.MFLeader = false; // Set to true if you have one or more MFHelpers. Opens TP and gives commands when doing normal MF runs.
 
 	Scripts.ChestMania = true; // Open chests in configured areas. See sdk/areas.txt
-	Config.ChestMania.Act1 = [13, 14, 15, 16, 18, 19]; // List of act 1 areas to open chests in
-	Config.ChestMania.Act2 = [55, 59, 65, 66, 67, 68, 69, 70, 71, 72]; // List of act 2 areas to open chests in
-	Config.ChestMania.Act3 = [79, 80, 81, 92, 93, 84, 85, 90]; // List of act 3 areas to open chests in
-	Config.ChestMania.Act4 = []; // List of act 4 areas to open chests in
-	Config.ChestMania.Act5 = [115, 116, 119, 125, 126, 127]; // List of act 5 areas to open chests in
-		Scripts.ClearAnyArea = false; // Clear any area. Uses Config.ClearType to determine which type of monsters to kill.
-	Config.ClearAnyArea.AreaList = []; // List of area ids to clear. See sdk/areas.txt
+		Config.ChestMania.Act1 = [13, 14, 15, 16, 18, 19]; // List of act 1 areas to open chests in
+		Config.ChestMania.Act2 = [55, 59, 65, 66, 67, 68, 69, 70, 71, 72]; // List of act 2 areas to open chests in
+		Config.ChestMania.Act3 = [79, 80, 81, 92, 93, 84, 85, 90]; // List of act 3 areas to open chests in
+		Config.ChestMania.Act4 = [107]; // List of act 4 areas to open chests in
+		Config.ChestMania.Act5 = [115, 116, 119, 125, 126, 127]; // List of act 5 areas to open chests in
+	Scripts.ClearAnyArea = false; // Clear any area. Uses Config.ClearType to determine which type of monsters to kill.
+		Config.ClearAnyArea.AreaList = []; // List of area ids to clear. See sdk/areas.txt
 
+	// Boss/area scripts
 
-
-    // Blizzard Sorc MF areas
-    Scripts.Mausoleum = true;
-        Config.Mausoleum.KillBloodRaven = false;
-        Config.Mausoleum.ClearCrypt = true;
+	// *** act 1 ***
+	Scripts.Corpsefire = true;
+		Config.Corpsefire.ClearDen = true;
+	Scripts.Mausoleum = false;
+		Config.Mausoleum.KillBloodRaven = false;
+		Config.Mausoleum.ClearCrypt = false;
 	Scripts.Rakanishu = true;
 		Config.Rakanishu.KillGriswold = true;
 	Scripts.UndergroundPassage = true;
@@ -35,36 +40,46 @@ function LoadConfig() {
 		Config.Countess.KillGhosts = true;
 	Scripts.Andariel = true;
 	Scripts.Cows = true;
+
 	// *** act 2 ***
-	Scripts.Radament = true;
-	Scripts.AncientTunnels = true;
-		Config.AncientTunnels.OpenChest = true; // Open special chest in Lost City
-		Config.AncientTunnels.KillDarkElder = true;
+	Scripts.Radament = false;
+	Scripts.Coldworm = true;
+		Config.Coldworm.KillBeetleburst = false;
+		Config.Coldworm.ClearMaggotLair = false; // Clear all 3 levels
+	Scripts.AncientTunnels = false;
+		Config.AncientTunnels.OpenChest = false; // Open special chest in Lost City
+		Config.AncientTunnels.KillDarkElder = false;
 	Scripts.Summoner = true;
-		Config.Summoner.FireEye = true;
-	Scripts.Tombs = false;
+		Config.Summoner.FireEye = false;
+	Scripts.Tombs = true;
+	Scripts.Duriel = true;
+
 	// *** act 3 ***
-	Scripts.Travincal = false;
+	Scripts.Stormtree = false;
+	Scripts.KurastTemples = false;
+	Scripts.Icehawk = false;
+	Scripts.Endugu = false;
+	Scripts.Travincal = true;
 		Config.Travincal.PortalLeech = false; // Set to true to open a portal for leechers.
 	Scripts.Mephisto = true;
-		Config.Mephisto.MoatTrick = true;
-		Config.Mephisto.KillCouncil = false;
+		Config.Mephisto.MoatTrick = false;
+		Config.Mephisto.KillCouncil = true;
 		Config.Mephisto.TakeRedPortal = true;
 
 	// *** act 4 ***
 	Scripts.OuterSteppes = true;
 	Scripts.Izual = false;
-	Scripts.Hephasto = false;
+	Scripts.Hephasto = true;
 	Scripts.Vizier = false; // Intended for classic sorc, kills Vizier only.
 	Scripts.FastDiablo = false;
 	Scripts.Diablo = true;
 		Config.Diablo.WalkClear = false; // Disable teleport while clearing to protect leechers
 		Config.Diablo.Entrance = true; // Start from entrance
-		Config.Diablo.SealWarning = "";
-		Config.Diablo.EntranceTP = "";
-		Config.Diablo.StarTP = "";
-		Config.Diablo.DiabloMsg = "";
-		Config.Diablo.SealOrder = ["infector", "seis", "vizier"]; // the order in which to clear the seals. If seals are excluded, they won't be checked unless diablo fails to appear
+		Config.Diablo.SealWarning = "Leave the seals alone!";
+		Config.Diablo.EntranceTP = "Entrance TP up";
+		Config.Diablo.StarTP = "Star TP up";
+		Config.Diablo.DiabloMsg = "Diablo";
+		Config.Diablo.SealOrder = ["vizier", "seis", "infector"]; // the order in which to clear the seals. If seals are excluded, they won't be checked unless diablo fails to appear
 	Scripts.SealLeader = false; // Clear a safe spot around seals and invite leechers in. Leechers should run SealLeecher script. Don't run with Diablo or FastDiablo.
 
 	// *** act 5 ***
@@ -81,13 +96,13 @@ function LoadConfig() {
 	Scripts.Eyeback = false;
 	Scripts.SharpTooth = false;
 	Scripts.ThreshSocket = true;
-	Scripts.Abaddon = true;
+	Scripts.Abaddon = false;
 	Scripts.Frozenstein = false;
-		Config.Frozenstein.ClearFrozenRiver = false;
+		Config.Frozenstein.ClearFrozenRiver = true;
 	Scripts.Bonesaw = false;
 		Config.Bonesaw.ClearDrifterCavern = false;
 	Scripts.Snapchip = false;
-		Config.Snapchip.ClearIcyCellar = false;
+		Config.Snapchip.ClearIcyCellar = true;
 	Scripts.Worldstone = false;
 	Scripts.Baal = true;
 		Config.Baal.HotTPMessage = "Hot TP!";
@@ -127,7 +142,7 @@ function LoadConfig() {
 		Config.Enchant.Triggers = ["chant", "cows", "wps"]; // Chat commands for enchant, cow level and waypoint giving
 		Config.Enchant.GetLeg = false; // Get Wirt's Leg from Tristram. If set to false, it will check for the leg in town.
 		Config.Enchant.AutoChant = false; // Automatically enchant nearby players and their minions
-		Config.Enchant.GameLength = 120; // Game length in minutes
+		Config.Enchant.GameLength = 20; // Game length in minutes
 	Scripts.IPHunter = false;
 		Config.IPHunter.IPList = []; // List of IPs to look for. example: [165, 201, 64]
 		Config.IPHunter.GameLength = 3; // Number of minutes to stay in game if ip wasn't found
@@ -140,6 +155,7 @@ function LoadConfig() {
 		Config.ShopBot.ScanIDs = [];
 		Config.ShopBot.CycleDelay = 0; // Delay between shopping cycles in milliseconds, might help with crashes.
 		Config.ShopBot.QuitOnMatch = false; // Leave game as soon as an item is shopped.
+
 
 	// *** Guest scripts ***
 
@@ -162,29 +178,29 @@ function LoadConfig() {
 		Config.BaalAssistant.NextGameMessage = ["Next Game", "Next", "New Game"];	// Next Game message, this is a precautionary quit command, Reccomended setting up: Config.QuitList
 
 	// Town settings
-	Config.HealHP = 80; // Go to a healer if under designated percent of life.
-	Config.HealMP = 50; // Go to a healer if under designated percent of mana.
+	Config.HealHP = 50; // Go to a healer if under designated percent of life.
+	Config.HealMP = 5; // Go to a healer if under designated percent of mana.
 	Config.HealStatus = true; // Go to a healer if poisoned or cursed
 	Config.UseMerc = true; // Use merc. This is ignored and always false in d2classic.
 	Config.MercWatch = true; // Instant merc revive during battle.
 
 	// Potion settings
-	Config.UseHP = 90; // Drink a healing potion if life is under designated percent.
+	Config.UseHP = 85; // Drink a healing potion if life is under designated percent.
 	Config.UseRejuvHP = 55;  // Drink a rejuvenation potion if life is under designated percent.
 	Config.UseMP = 40; // Drink a mana potion if mana is under designated percent.
-	Config.UseRejuvMP = 1; // Drink a rejuvenation potion if mana is under designated percent.
+	Config.UseRejuvMP = 0; // Drink a rejuvenation potion if mana is under designated percent.
 	Config.UseMercHP = 75; // Give a healing potion to your merc if his/her life is under designated percent.
-	Config.UseMercRejuv = 1; // Give a rejuvenation potion to your merc if his/her life is under designated percent.
+	Config.UseMercRejuv = 0; // Give a rejuvenation potion to your merc if his/her life is under designated percent.
 	Config.HPBuffer = 0; // Number of healing potions to keep in inventory.
 	Config.MPBuffer = 0; // Number of mana potions to keep in inventory.
 	Config.RejuvBuffer = 0; // Number of rejuvenation potions to keep in inventory.
 
 	// Chicken settings
-	Config.LifeChicken = 20; // Exit game if life is less or equal to designated percent.
+	Config.LifeChicken = 30; // Exit game if life is less or equal to designated percent.
 	Config.ManaChicken = 0; // Exit game if mana is less or equal to designated percent.
 	Config.MercChicken = 0; // Exit game if merc's life is less or equal to designated percent.
-	Config.TownHP = 40; // Go to town if life is under designated percent.
-	Config.TownMP = 2; // Go to town if mana is under designated percent.
+	Config.TownHP = 50; // Go to town if life is under designated percent.
+	Config.TownMP = 0; // Go to town if mana is under designated percent.
 
 	/* Inventory lock configuration. !!!READ CAREFULLY!!!
 	 * 0 = item is locked and won't be moved. If item occupies more than one slot, ALL of those slots must be set to 0 to lock it in place.
@@ -192,10 +208,10 @@ function LoadConfig() {
 	 * 1 = item is unlocked and will be dropped, stashed or sold.
 	 * If you don't change the default values, the bot won't stash items.
 	 */
-	Config.Inventory[0] = [1,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[1] = [1,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[2] = [1,1,1,1,1,1,1,0,0,0];
-	Config.Inventory[3] = [1,1,1,1,1,1,1,0,0,0];
+	Config.Inventory[0] = [1,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[1] = [1,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[2] = [1,1,1,1,1,0,0,0,0,0];
+	Config.Inventory[3] = [1,1,1,1,1,0,0,0,0,0];
 
 	Config.StashGold = 100000; // Minimum amount of gold to stash.
 
@@ -205,13 +221,13 @@ function LoadConfig() {
 	 */
 	Config.BeltColumn[0] = "hp";
 	Config.BeltColumn[1] = "mp";
-	Config.BeltColumn[2] = "rv";
+	Config.BeltColumn[2] = "mp";
 	Config.BeltColumn[3] = "rv";
 
 	/* Minimum amount of potions. If we have less, go to vendor to purchase more.
 	 * Set rejuvenation columns to 0, because they can't be bought.
 	 */
-	Config.MinColumn[0] = 3;
+	Config.MinColumn[0] = 1;
 	Config.MinColumn[1] = 3;
 	Config.MinColumn[2] = 0;
 	Config.MinColumn[3] = 0;
@@ -262,8 +278,8 @@ function LoadConfig() {
 	Config.SkipLogging = []; // Custom log skip list. Set as three digit item code or classid. Example: ["tes", "ceh", 656, 657] will ignore logging of essences.
 	Config.ShowCubingInfo = true; // Show cubing messages on console
 	Config.Gamble = true;
-	Config.GambleGoldStart = 1400000;
-	Config.GambleGoldStop = 400000;
+	Config.GambleGoldStart = 2000000;
+	Config.GambleGoldStop = 1000000;
 	Config.GambleItems.push("Circlet");
 	Config.GambleItems.push("Coronet");
 	Config.Cubing = true; // Set to true to enable cubing.
@@ -273,8 +289,22 @@ function LoadConfig() {
 	Config.Recipes.push([Recipe.Rune, "Mal Rune"]); // Upgrade Mal to Ist
 	Config.Recipes.push([Recipe.Rune, "Ist Rune"]); // Upgrade Ist to Gul
 	Config.Recipes.push([Recipe.Rune, "Gul Rune"]); // Upgrade Gul to Vex
+	//Caster Amethyst
 	Config.Recipes.push([Recipe.Caster.Amulet]); // Craft Caster Amulet
+	Config.Recipes.push([Recipe.Caster.Boots, "Wyrmhide Boots"]); // Craft Caster Boots
+
+	//Blood Ruby
 	Config.Recipes.push([Recipe.Blood.Ring]); // Craft Blood Ring
+	Config.Recipes.push([Recipe.Blood.Helm, "Armet"]); // Craft Blood Armet
+	Config.Recipes.push([Recipe.Blood.Weapon, "Berserker Axe"]); // Craft Blood Weapon
+	
+	//Hit Power Sapphire
+	Config.Recipes.push([Recipe.HitPower.Gloves, "Vambraces"]); // Craft Hit Power Vambraces
+
+	//Safety Emerald
+	Config.Recipes.push([Recipe.HitPower.Shield, "Ancient Shield"]); // Craft Hit Power Shield
+
+	//Reroll
 	Config.Recipes.push([Recipe.Reroll.Magic, "Grand Charm"]); // Reroll magic Grand Charm (ilvl 91+)
 	Config.Recipes.push([Recipe.Socket.Armor, "Sacred Armor", Roll.Eth]); // Socket ethereal Sacred Armor
 	Config.Recipes.push([Recipe.Socket.Armor, "Archon Plate", Roll.Eth]); // Socket ethereal Archon Plate
@@ -284,10 +314,9 @@ function LoadConfig() {
 	Config.Recipes.push([Recipe.Unique.Armor.ToElite, "Battle Gauntlets", Roll.NonEth]); // Upgrade Magefist or Lavagout to Elite
 	Config.Recipes.push([Recipe.Unique.Armor.ToElite, "War Boots", Roll.NonEth]); // Upgrade Gore Rider to Elite
 	Config.MakeRunewords = true; // Set to true to enable runeword making/rerolling
-	Config.Runewords.push([Runeword.Insight, "Thresher", Roll.Eth]); // Make ethereal Insight Thresher
-	Config.Runewords.push([Runeword.Insight, "Cryptic Axe", Roll.Eth]); // Make ethereal Insight Cryptic Axe
-	Config.Runewords.push([Runeword.Insight, "Colossus Voulge", Roll.Eth]); // Make ethereal Insight Cryptic Axe
-	Config.KeepRunewords.push("[type] == polearm # [meditationaura] == 17");
+	//Config.Runewords.push([Runeword.Insight, "Thresher", Roll.Eth]); // Make ethereal Insight Thresher
+	//Config.Runewords.push([Runeword.Insight, "Cryptic Axe", Roll.Eth]); // Make ethereal Insight Cryptic Axe
+	//Config.KeepRunewords.push("[type] == polearm # [meditationaura] == 17");
 	Config.Runewords.push([Runeword.Spirit, "Monarch", Roll.NonEth]); // Make Spirit Monarch
 	Config.Runewords.push([Runeword.Spirit, "Sacred Targe", Roll.NonEth]); // Make Spirit Sacred Targe
 	Config.KeepRunewords.push("[type] == shield || [type] == auricshields # [fcr] == 35");
@@ -295,8 +324,8 @@ function LoadConfig() {
 	// General config
 	Config.AutoMap = false; // Set to true to open automap at the beginning of the game.
 	Config.LastMessage = ""; // Message or array of messages to say at the end of the run. Use $nextgame to say next game - "Next game: $nextgame" (works with lead entry point)
-	Config.MinGameTime = 560; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
-	Config.MaxGameTime = 1500000; // Maximum game time in seconds. Quit game when limit is reached.
+	Config.MinGameTime = 260; // Min game time in seconds. Bot will TP to town and stay in game if the run is completed before.
+	Config.MaxGameTime = 150000; // Maximum game time in seconds. Quit game when limit is reached.
 	Config.OpenChests = true; // Open chests. Controls key buying.
 	Config.MiniShopBot = true; // Scan items in NPC shops.
 	Config.PacketShopping = true; // Use packets to shop. Improves shopping speed.
@@ -324,7 +353,7 @@ function LoadConfig() {
 	// Monster skip config
 	// Skip immune monsters. Possible options: "fire", "cold", "lightning", "poison", "physical", "magic".
 	// You can combine multiple resists with "and", for example - "fire and cold", "physical and cold and poison"
-	Config.SkipImmune = ["physical and cold"];
+	Config.SkipImmune = ["physical and magic"];
 	// Skip enchanted monsters. Possible options: "extra strong", "extra fast", "cursed", "magic resistant", "fire enchanted", "lightning enchanted", "cold enchanted", "mana burn", "teleportation", "spectral hit", "stone skin", "multiple shots".
 	// You can combine multiple enchantments with "and", for example - "cursed and extra fast", "mana burn and extra strong and lightning enchanted"
 	Config.SkipEnchant = [];
@@ -338,10 +367,10 @@ function LoadConfig() {
 	 * Skills MUST be POSITIVE numbers. For reference see ...\kolbot\sdk\skills.txt
 	 */
 	Config.AttackSkill[0] = -1; // Preattack skill. Not implemented yet.
-	Config.AttackSkill[1] = 59; // Primary skill to bosses.
-	Config.AttackSkill[2] = 55; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
-	Config.AttackSkill[3] = 59; // Primary skill to others.
-	Config.AttackSkill[4] = 55; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[3] is untimed skill.
+	Config.AttackSkill[1] = 49; // Primary skill to bosses.
+	Config.AttackSkill[2] = -1; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[1] is untimed skill.
+	Config.AttackSkill[3] = 53; // Primary skill to others.
+	Config.AttackSkill[4] = -1; // Primary untimed skill to bosses. Keep at -1 if Config.AttackSkill[3] is untimed skill.
 	Config.AttackSkill[5] = -1; // Secondary skill if monster is immune to primary.
 	Config.AttackSkill[6] = -1; // Secondary untimed skill if monster is immune to primary untimed.
 
@@ -361,7 +390,7 @@ function LoadConfig() {
 	Config.NoTele = false; // Restrict char from teleporting. Useful for low level/low mana chars
 	Config.Dodge = true; // Move away from monsters that get too close. Don't use with short-ranged attacks like Poison Dagger.
 	Config.DodgeRange = 15; // Distance to keep from monsters.
-	Config.DodgeHP = 90; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
+	Config.DodgeHP = 80; // Dodge only if HP percent is less than or equal to Config.DodgeHP. 100 = always dodge.
 	Config.BossPriority = false; // Set to true to attack Unique/SuperUnique monsters first when clearing
 	Config.ClearType = 0xF; // Monster spectype to kill in level clear scripts (ie. Mausoleum). 0xF = skip normal, 0x7 = champions/bosses, 0 = all
 	Config.TeleStomp = false; // Use merc to attack bosses if they're immune to attacks, but not to physical damage
@@ -381,7 +410,7 @@ function LoadConfig() {
 	Config.Wereform = false; // 0 / false - don't shapeshift, 1 / "Werewolf" - change to werewolf, 2 / "Werebear" - change to werebear
 
 	// Class specific config
-	Config.CastStatic = 60; // Cast static until the target is at designated life percent. 100 = disabled.
+	Config.CastStatic = 57; // Cast static until the target is at designated life percent. 100 = disabled.
 	Config.StaticList = []; // List of monster NAMES or CLASSIDS to static. Example: Config.StaticList = ["Andariel", 243];
 
 	/* AutoSkill builds character based on array defined by the user and it replaces AutoBuild's skill system.
